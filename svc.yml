@@ -11,4 +11,4 @@ spec:
   - protocol: TCP
     port: 80            # Service port
     targetPort: 80      # Container port (from Deployment)
-  type: ClusterIP       # Default type, accessible only inside the cluster
+         
