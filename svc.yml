@@ -9,6 +9,6 @@ spec:
     app: nginx          # must match the labels in your Deployment
   ports:
   - protocol: TCP
-    port: 80            # Service port
-    targetPort: 80      # Container port (from Deployment)
-         
+    port: 80            # Service port exposed externally
+    targetPort: 80      # Container port inside Pod
+  type: LoadBalancer    # Exposes service externally
