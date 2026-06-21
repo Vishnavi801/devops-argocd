@@ -1,12 +1,8 @@
 \# ArgoCD GitOps Deployment Project
 
-
-
 \## Overview
 
 Implemented GitOps-based application deployment using ArgoCD and Kubernetes.
-
-
 
 \## Tools Used
 
@@ -18,13 +14,9 @@ Implemented GitOps-based application deployment using ArgoCD and Kubernetes.
 
 \- Docker
 
-
-
 \## Architecture
 
 GitHub → ArgoCD → Kubernetes Cluster
-
-
 
 \## Kubernetes Resources
 
@@ -32,9 +24,20 @@ GitHub → ArgoCD → Kubernetes Cluster
 
 \- Service
 
-
-
 \## Outcome
 
 Automated application deployment and synchronization using GitOps principles.
+## Deployment Steps
 
+1. Create Kubernetes Deployment
+2. Create Kubernetes Service
+3. Configure ArgoCD Application
+4. Sync application from GitHub
+5. Verify deployment status
+
+## Commands
+
+kubectl apply -f deployment.yml
+kubectl apply -f svc.yml
+argocd app sync
+argocd app get
