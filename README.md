@@ -41,3 +41,25 @@ kubectl apply -f deployment.yml
 kubectl apply -f svc.yml
 argocd app sync
 argocd app get
+
+Architecture Diagram:
+
+Developer
+    |
+    v
+GitHub Repository
+    |
+    v
+ArgoCD
+    |
+    v
+Kubernetes Cluster
+    |
+    v
+Deployment
+    |
+    v
+Service
+    |
+    v
+Application Pods
